@@ -4,5 +4,6 @@ public class Monocle {
         Game game = new Game();
         game.playerGenerator();
         System.out.println("Число игроков на данный момент: " + Player.ID_COUNTER);
+        game.printPlayersNames();
     }
 }
