@@ -5,6 +5,7 @@ public class Player {
     private String playerName;
     private int playerMoney;
     private int playerID;
+
     public Player (String playerName, int playerMoney) {
         this.playerName = playerName;
         this.playerMoney = playerMoney;
@@ -35,6 +36,17 @@ public class Player {
     public void playerInfoPrinter () {
         System.out.println("Это игрок по имени " + playerName +
                 ". У него на счёте " + playerMoney + "$. Его ID: " + playerID);
+    }
+
+    public void acceptPayment(int money) {
+        playerMoney += money;
+    }
+
+    public void getPayment (int money) {
+        if (playerMoney - money < 0) {
+            System.out.println("Недостаточно средств!");
+        }
+        else { playerMoney -= money;}
     }
 
     @Override

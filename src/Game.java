@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class Game {
     private static int PLAYERS_NUMBER;
     private Player[] playersArray;
+
     public void playerGenerator(){
         Scanner input = new Scanner(System.in);
         System.out.println("Введите число игроков: ");
@@ -21,7 +22,15 @@ public class Game {
         System.out.print("Вот их имена: ");
         for (Player player:
              playersArray) {
-            System.out.printf(player.getPlayerName() + " ");
+            System.out.print(player.getPlayerName() + " ");
         }
+        System.out.println();
+    }
+
+    public Player[] getPlayersArray() {
+        return playersArray;
+    }
+    public Player getPlayer (int number) {
+        return playersArray[number];
     }
 }
