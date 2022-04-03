@@ -31,6 +31,7 @@ public class Game {
     public ArrayList<Player> getPlayersList() {
         return playersList;
     }
+
     public Player getPlayer (int number) {
         return playersList.get(number);
     }

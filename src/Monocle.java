@@ -6,7 +6,7 @@ public class Monocle {
         game.playerGenerator();
         System.out.println("Число игроков на данный момент: " + Player.ID_COUNTER);
         game.printPlayersNames();
-        Transacitons.payment(game.getPlayer(1), game.getPlayer(0), 100);
-        Transacitons.payment(bank, game.getPlayer(2), 300);
+        Transacitons.payment(game.getPlayer(1), game.getPlayer(0), 600);
+        Transacitons.payment(bank, game.getPlayer(1), 300);
     }
 }

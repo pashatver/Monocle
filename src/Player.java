@@ -43,10 +43,7 @@ public class Player {
     }
 
     public void getPayment (int money) {
-        if (playerMoney - money < 0) {
-            System.out.println("Недостаточно средств!");
-        }
-        else { playerMoney -= money;}
+        playerMoney -= money;
     }
 
     @Override
