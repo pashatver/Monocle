@@ -1,4 +1,7 @@
+package java;
+
 public class Transacitons {
+
     public static void payment(Player donor, Player acceptor, int sum) {
         if (donor.getPlayerMoney() - sum < 0) {
             System.out.println("У игрока " + donor.getPlayerName() + " недостаточно средств!");
@@ -18,12 +21,10 @@ public class Transacitons {
         else {
             donor.getPayment(sum);
             acceptor.acceptPayment(sum);
+            System.out.println("Игрок " + donor.getPlayerName() + " заплатил " + sum + " Банку.");
+            System.out.println("Баланс игрока " + donor.getPlayerName() + ": " + donor.getPlayerMoney() );
         }
-
-        System.out.println("Игрок " + donor.getPlayerName() + " заплатил " + sum + " Банку.");
-        System.out.println("Баланс игрока " + donor.getPlayerName() + ": " + donor.getPlayerMoney() );
     }
-
     public static void payment(Bank donor, Player acceptor, int sum) {
         donor.getPayment(sum);
         acceptor.acceptPayment(sum);

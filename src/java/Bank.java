@@ -1,3 +1,5 @@
+package java;
+
 public class Bank {
     private int bankMoney;
     private int incomingPay = 0;

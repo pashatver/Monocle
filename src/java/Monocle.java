@@ -1,3 +1,5 @@
+package java;
+
 public class Monocle {
     public static void main(String[] args) {
         System.out.println("Вас приветствует калькулятор для Монополии \"Монокль\"!");
