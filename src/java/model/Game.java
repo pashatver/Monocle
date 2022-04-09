@@ -1,9 +1,10 @@
 package java.model;
 
+import java.io.Serializable;
 import java.service.Context;
 import java.util.ArrayList;
 
-public class Game {
+public class Game implements Serializable {
     private ArrayList<Player> playersList;
 
     public Game() {

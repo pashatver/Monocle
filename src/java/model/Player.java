@@ -1,8 +1,10 @@
 package java.model;
 
+import java.io.Serializable;
+
 import static java.model.PlayerType.Bank;
 
-public class Player {
+public class Player implements Serializable {
     private final String name;
     private Long money;
     private final Integer id;
